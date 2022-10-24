@@ -1,0 +1,42 @@
+.div-checkbox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.checkbox:checked+.checkbox-label .check {
+    background-color: var(--hover-color);
+    border: none;
+    background-origin: border-box;
+
+}
+
+.checkbox-label {
+    display: flex;
+
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1, 71;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.check {
+    margin-right: 8px;
+    width: 16px;
+    height: 15px;
+    border: 1px solid #000000;
+    border-radius: 2px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.check svg {
+    display: block;
+}
+
+.agreement-link {
+    color: rgba(33, 150, 243, 1);
+    text-decoration: underline;
+}

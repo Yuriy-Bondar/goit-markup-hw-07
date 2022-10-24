@@ -1,0 +1,119 @@
+.fsocial-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
+
+    transition: background-color 250ms var(--function);
+}
+
+.fsocial-link:hover,
+.fsocial-link:focus {
+    background-color: var(--hover-color);
+}
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: var(--footer-bgc-color);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer .logo {
+    margin-bottom: 20px;
+}
+
+.footer .adress {
+    margin-bottom: 9px;
+
+    color: var(--footer-adress-color);
+    font-style: normal;
+}
+
+.fcontacts .link {
+    color: var(--footer-contacts-color);
+
+    transition: color 250ms var(--function);
+}
+
+.fitem {
+    margin-bottom: 9px;
+}
+
+.fitem:last-child {
+    margin-bottom: 0;
+}
+
+.fcontacts .link:hover,
+.fcontacts .link:focus {
+    color: var(--hover-color);
+}
+
+.join {
+
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.footer-flex {
+    display: flex;
+    align-items: baseline;
+
+}
+
+.adress-container {
+    width: 231px;
+}
+
+.join-container {
+    width: 206px;
+    margin-left: 70px;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-left: auto;
+    align-items: flex-end;
+}
+
+.form-email {
+    display: flex;
+    flex-direction: column;
+}
+
+.div-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-email {
+    width: 358px;
+    height: 50px;
+    padding: 15px;
+    background-color: rgba(33, 150, 243, 0);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* display: flex;
+    align-items: center; */
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}

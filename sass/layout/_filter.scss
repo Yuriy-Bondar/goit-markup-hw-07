@@ -1,0 +1,13 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter .item {
+    min-width: 73px;
+}
+
+.filter .item+.item {
+    margin-left: 8px;
+}
