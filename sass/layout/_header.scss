@@ -1,0 +1,94 @@
+header {
+    border-bottom: 1px solid var(--header-border-color);
+}
+
+.header {
+    display: flex;
+}
+
+.nav-flex {
+    display: flex;
+    align-items: center;
+}
+
+.nav .link,
+.contacts .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--title-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav {
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav .item+.item {
+    margin-left: 50px;
+}
+
+.nav a {
+    transition: color 250ms var(--function);
+}
+
+.nav a:hover,
+.nav a:focus {
+    color: var(--hover-color);
+}
+
+.nav .current {
+    position: relative;
+    color: var(--hover-color);
+}
+
+.nav .current::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--hover-color);
+}
+
+.nav .portfolio-current::after {
+    width: 78px;
+}
+
+
+.contacts {
+    display: flex;
+    margin-left: auto;
+}
+
+.contacts .item+.item {
+    margin-left: 50px;
+}
+
+.contacts .link {
+    color: var(--description-color);
+    display: flex;
+    align-items: center;
+}
+
+.contacts a {
+    transition: color 250ms var(--function);
+}
+
+.contacts a:hover,
+.contacts a:focus {
+    color: var(--hover-color);
+}
+
+.icon {
+    margin-right: 10px;
+    fill: currentColor;
+}

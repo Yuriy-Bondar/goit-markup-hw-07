@@ -1,0 +1,24 @@
+.button-sign {
+    display: inline-flex;
+    justify-content: space-around;
+    margin-left: 12px;
+    padding: 10px 28px;
+    min-width: 200px;
+
+    border-radius: 4px;
+    border: none;
+    background-color: var(--button-bgc-color);
+
+    color: var(--button-text-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+}
+
+.button-sign:active {
+    background-color: var(--button-active-color);
+}

@@ -1,0 +1,23 @@
+.button-hero {
+    display: inline-block;
+    padding: 10px 32px;
+    min-width: 216px;
+    border-radius: 4px;
+    border: none;
+    background-color: var(--button-bgc-color);
+
+    color: var(--button-text-color);
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+
+}
+
+.button-hero:active {
+    background-color: var(--button-active-color);
+}
