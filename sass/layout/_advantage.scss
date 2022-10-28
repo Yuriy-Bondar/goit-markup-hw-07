@@ -3,11 +3,11 @@
     justify-content: space-between;
 }
 
-.advantage .item {
+.advantage__item {
     width: 270px;
 }
 
-.advantage .h3 {
+.advantage__title {
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -16,7 +16,7 @@
     text-transform: uppercase;
 }
 
-.icon-advantage {
+.advantage__icon {
     height: 120px;
     margin-bottom: 30px;
     display: flex;
@@ -25,7 +25,7 @@
     background: var(--advantage-icon);
 }
 
-.description {
+.advantage__description {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;

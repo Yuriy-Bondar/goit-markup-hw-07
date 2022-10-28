@@ -28,8 +28,28 @@ a,
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    &--works {
+        padding-top: 0;
+    }
+
+    &--team {
+        background-color: var(--team-bgc-color);
+    }
+
 }
 
-section.no-top-padding {
-    padding-top: 0;
+.title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
