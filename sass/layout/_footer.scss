@@ -1,21 +1,3 @@
-.fsocial-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: #FFFFFF;
-
-    transition: background-color 250ms var(--function);
-}
-
-.fsocial-link:hover,
-.fsocial-link:focus {
-    background-color: var(--hover-color);
-}
-
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -27,38 +9,48 @@
     letter-spacing: 0.03em;
 }
 
-.footer .logo {
+.footer__flex {
+    display: flex;
+    align-items: baseline;
+
+}
+
+.footer__logo {
     margin-bottom: 20px;
 }
 
-.footer .adress {
+.adress__title {
     margin-bottom: 9px;
 
     color: var(--footer-adress-color);
     font-style: normal;
 }
 
-.fcontacts .link {
+.adress__link {
     color: var(--footer-contacts-color);
 
     transition: color 250ms var(--function);
+
+        &:hover,
+        &:focus {
+            color: var(--hover-color);
+        }
 }
 
-.fitem {
+.adress__item {
     margin-bottom: 9px;
-}
 
-.fitem:last-child {
-    margin-bottom: 0;
-}
-
-.fcontacts .link:hover,
-.fcontacts .link:focus {
-    color: var(--hover-color);
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 
 .join {
+    width: 206px;
+    margin-left: 70px;
+}
 
+.join__label {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -66,21 +58,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-}
-
-.footer-flex {
-    display: flex;
-    align-items: baseline;
-
-}
-
-.adress-container {
-    width: 231px;
-}
-
-.join-container {
-    width: 206px;
-    margin-left: 70px;
 }
 
 .subscribe-form {
@@ -94,12 +71,12 @@
     flex-direction: column;
 }
 
-.div-input {
+.subscribe {
     display: flex;
     flex-direction: column;
 }
 
-.input-email {
+.subscribe__email {
     width: 358px;
     height: 50px;
     padding: 15px;
@@ -112,8 +89,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    /* display: flex;
-    align-items: center; */
+    
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
