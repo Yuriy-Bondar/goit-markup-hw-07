@@ -1,18 +1,18 @@
-header {
+.header {
     border-bottom: 1px solid var(--header-border-color);
 }
 
-.header {
+.page-header {
     display: flex;
 }
 
-.nav-flex {
+.page-header__nav {
     display: flex;
     align-items: center;
 }
 
-.nav .link,
-.contacts .link {
+.site-nav__link,
+.contacts-link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -23,72 +23,79 @@ header {
     letter-spacing: 0.02em;
 }
 
-.nav {
+.site-nav {
     display: flex;
     margin-left: 93px;
 }
 
-.nav .item+.item {
-    margin-left: 50px;
+.site-nav__item:not(:last-child) {
+    margin-right: 50px;
 }
 
-.nav a {
+.site-nav__link {
     transition: color 250ms var(--function);
+
+    &:hover,
+    &:focus {
+        color: var(--hover-color);
+    }
 }
 
-.nav a:hover,
-.nav a:focus {
-    color: var(--hover-color);
+%site-nav__current {
+        position: relative;
+        color: var(--hover-color);
+    
+        &::after {
+                content: '';
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                transform: translateX(-50%);
+                height: 4px;
+                border-radius: 2px;
+                background-color: var(--hover-color);
+            }
+    
+        }
+
+.site-nav__current-header {
+    @extend %site-nav__current;
+    &::after {
+        width: 48px;
+    }
 }
 
-.nav .current {
-    position: relative;
-    color: var(--hover-color);
+.site-nav__current-portfolio {
+    @extend %site-nav__current;
+
+    &::after {
+        width: 78px;
+    }
+
 }
-
-.nav .current::after {
-    content: '';
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-
-    width: 48px;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--hover-color);
-}
-
-.nav .portfolio-current::after {
-    width: 78px;
-}
-
-
+         
 .contacts {
     display: flex;
     margin-left: auto;
 }
 
-.contacts .item+.item {
-    margin-left: 50px;
+.contacts-item:not(:last-child) {
+    margin-right: 50px;
 }
 
-.contacts .link {
-    color: var(--description-color);
+.contacts-link {
     display: flex;
     align-items: center;
-}
-
-.contacts a {
+    color: var(--description-color);
     transition: color 250ms var(--function);
+
+    &:hover,
+    &:focus {
+        color: var(--hover-color);
+    }
 }
 
-.contacts a:hover,
-.contacts a:focus {
-    color: var(--hover-color);
-}
-
-.icon {
+.contacts-icon {
     margin-right: 10px;
     fill: currentColor;
 }
